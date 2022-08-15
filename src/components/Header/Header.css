@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  position: sticky;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  background-color: white;
+  height: 150px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-logo {
+  min-width: 200px;
+  max-width: 400px;
+}
+.header-btns {
+  display: flex;
+  flex-direction: row;
+}
+#hamburger {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header-btns button {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+}

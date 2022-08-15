@@ -1,0 +1,47 @@
+import React from "react";
+import "./Header.css";
+import headerLogo from "../../images/logo-bookmark.svg";
+import hamburger from "../../images/icon-hamburger.svg";
+import Button from "../UI/Button/Button";
+
+export default function Header() {
+  return (
+    <header>
+      <section className="header-logo">
+        <img className="header-logo" src={headerLogo} alt="headerLogo" />
+      </section>
+      <section className="header-btns">
+        <Button
+          className="btn"
+          type="button"
+          name={"features"}
+          style={{ color: "black", background: "none" }}
+        />
+
+        <Button
+          className="btn"
+          type="button"
+          name={"pricing"}
+          style={{ color: "black", background: "none" }}
+        />
+
+        <Button
+          className="btn"
+          type="button"
+          name={"contact"}
+          style={{ color: "black", background: "none" }}
+        />
+
+        <Button
+          className="btn"
+          type="button"
+          name={"login"}
+          style={{ color: "white", width: "150px" }}
+        />
+        <div className="dropdown-menu">
+          <img id="hamburger" src={hamburger} alt="ham" />
+        </div>
+      </section>
+    </header>
+  );
+}

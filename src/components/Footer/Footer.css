@@ -1,0 +1,15 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  background: hsl(229, 31%, 21%);
+  color: white;
+  height: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+}

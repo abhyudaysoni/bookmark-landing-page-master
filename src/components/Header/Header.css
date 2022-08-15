@@ -24,6 +24,9 @@ header {
 }
 
 @media (max-width: 700px) {
+  header {
+    height: 10vh;
+  }
   .header-btns button {
     display: none;
   }

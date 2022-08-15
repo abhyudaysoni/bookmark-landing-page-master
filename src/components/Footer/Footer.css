@@ -13,3 +13,18 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+.social-media-links img {
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: 10vh;
+  }
+  footer button {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+}

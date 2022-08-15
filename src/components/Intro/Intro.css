@@ -1,0 +1,18 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.intro img {
+  max-width: 500px;
+}
+@media (max-width: 700px) {
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .intro img {
+    max-width: 100%;
+  }
+}

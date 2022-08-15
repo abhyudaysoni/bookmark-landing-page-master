@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 70%;
+}
+p {
+  color: #777778;
+  font-size: 1rem;
+}
+.section-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+.section-description h3 {
+  margin: 2%;
+}
+.section-description p {
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  main {
+    width: 90%;
+  }
+}

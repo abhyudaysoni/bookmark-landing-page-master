@@ -8,7 +8,10 @@ export default function Header() {
   return (
     <header>
       <section className="header-logo">
-        <img className="header-logo" src={headerLogo} alt="headerLogo" />
+        <a href="/">
+          {" "}
+          <img className="header-logo" src={headerLogo} alt="headerLogo" />
+        </a>
       </section>
       <section className="header-btns">
         <Button

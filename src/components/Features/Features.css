@@ -15,10 +15,11 @@
   background-color: white;
   border: none;
   border-bottom: 1px solid black;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 0;
   text-transform: lowercase;
   margin: 0;
+  letter-spacing: 1px;
 }
 .tab-links:hover {
   border-bottom: 1px solid #ed8742;

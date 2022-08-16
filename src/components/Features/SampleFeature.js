@@ -6,9 +6,11 @@ export default function SampleFeature(props) {
   return (
     <div className="feature-container">
       <img src={props.imgSrc} alt={`${props.name}-logo`} />
+      <br />
       <div className="feature-description">
         <h3>{props.heading}</h3>
         <p>{props.description}</p>
+        <br />
         <Button
           name={"More Info"}
           style={{

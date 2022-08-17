@@ -9,6 +9,7 @@ export default function Button(props) {
       style={props.style}
       id={props.id}
       onClick={props.onClick}
+      value={props.value}
     >
       {props.content && (
         <div className="btn-content">

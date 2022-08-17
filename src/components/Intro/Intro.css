@@ -11,6 +11,17 @@
   height: 80%;
   justify-content: space-evenly;
 }
+.intro-section button {
+  color: black;
+  background: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0px 5px 10px #d5d9e0;
+}
+.intro-section button:hover {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
 .intro img {
   max-width: 700px;
 }

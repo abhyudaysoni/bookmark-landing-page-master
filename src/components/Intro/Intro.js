@@ -14,24 +14,13 @@ export default function Intro() {
         </p>
         <Button
           id={"on-chrome"}
+          className={"intro-download-btn"}
           name={"Get it on Chrome"}
-          style={{
-            color: "white",
-            background: "hsl(231, 69%, 60%)",
-            letterSpacing: "1px",
-            fontWeight: "700",
-          }}
         />
         <Button
           id={"on-firefox"}
+          className={"intro-download-btn"}
           name={"Get it on Firefox"}
-          style={{
-            color: "black",
-            background: "#f5f7f6",
-            letterSpacing: "1px",
-            fontWeight: "700",
-            boxShadow: "0px 5px 10px #d5d9e0",
-          }}
         />
       </div>
       <div className="sample-img-container">

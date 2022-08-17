@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import "./FAQ.css";
-import arrow from "../../images/icon-arrow.svg";
+import arrowDown from "../../images/icon-arrow.svg";
+import arrowUp from "../../images/icon-close.svg";
 
 export default function FAQ() {
+  const qna = [
+    {
+      question: "What is Bookmark?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+    },
+    {
+      question: "How can I request a new Browser?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+    },
+    {
+      question: "Is there a mobile app?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+    },
+    {
+      question: "What about other Chromium browsers?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+    },
+  ];
+
+  const [question, setQuestion] = useState("");
+  const [activity, setActivity] = useState(false);
+
+  const openAnswer = (nextQuestion) => {
+    setQuestion(nextQuestion);
+    activity ? setActivity(false) : setActivity(true);
+  };
+  const obj = { val: 43 };
   return (
     <section className="FAQ">
       <section className="section-description">
@@ -13,35 +45,27 @@ export default function FAQ() {
           please feel free to e-mail us.
         </p>
       </section>
-      <section className="accordion-container">
-        <Button
-          name={"What is Bookmark?"}
-          className={"faq-btn"}
-          content={
-            <img className="arrow-down" src={arrow} alt={"arrow-down"}></img>
-          }
-        />
-        <Button
-          name={"How can I request a new Browser?"}
-          className={"faq-btn"}
-          content={
-            <img className="arrow-down" src={arrow} alt={"arrow-down"}></img>
-          }
-        />
-        <Button
-          name={"Is there a mobile app?"}
-          className={"faq-btn"}
-          content={
-            <img className="arrow-down" src={arrow} alt={"arrow-down"}></img>
-          }
-        />
-        <Button
-          name={"What about other Chromium browsers?"}
-          className={"faq-btn"}
-          content={
-            <img className="arrow-down" src={arrow} alt={"arrow-down"}></img>
-          }
-        />
+      <section>
+        {qna.map((element, index) => (
+          <div className="accordion-container" key={element.question + index}>
+            <Button
+              name={element.question}
+              className={"faq-btn question"}
+              onClick={openAnswer.bind(this, element.question)}
+              value={element.question}
+              content={
+                <img
+                  className="arrow-down"
+                  src={arrowDown}
+                  alt={"arrow-down"}
+                ></img>
+              }
+            />
+            {question === element.question && activity && (
+              <p className="answer">{element.answer}</p>
+            )}
+          </div>
+        ))}
       </section>
     </section>
   );

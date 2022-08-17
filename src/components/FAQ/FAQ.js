@@ -9,22 +9,22 @@ export default function FAQ() {
     {
       question: "What is Bookmark?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+        "Ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
     },
     {
       question: "How can I request a new Browser?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+        "Dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
     },
     {
       question: "Is there a mobile app?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+        "Sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
     },
     {
       question: "What about other Chromium browsers?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
+        "Ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, recusandae iure? Ipsa provident reiciendis dolor voluptatibus repellat incidunt accusamus quasi modi expedita debitis.",
     },
   ];
 
@@ -35,7 +35,6 @@ export default function FAQ() {
     setQuestion(nextQuestion);
     activity ? setActivity(false) : setActivity(true);
   };
-  const obj = { val: 43 };
   return (
     <section className="FAQ">
       <section className="section-description">
@@ -56,7 +55,7 @@ export default function FAQ() {
               content={
                 <img
                   className="arrow-down"
-                  src={arrowDown}
+                  src={!activity ? arrowDown : arrowUp}
                   alt={"arrow-down"}
                 ></img>
               }

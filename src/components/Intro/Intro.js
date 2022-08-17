@@ -12,16 +12,18 @@ export default function Intro() {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free
         </p>
-        <Button
-          id={"on-chrome"}
-          className={"intro-download-btn"}
-          name={"Get it on Chrome"}
-        />
-        <Button
-          id={"on-firefox"}
-          className={"intro-download-btn"}
-          name={"Get it on Firefox"}
-        />
+        <div className="intro-btn-container">
+          <Button
+            id={"on-chrome"}
+            className={"intro-download-btn"}
+            name={"Get it on Chrome"}
+          />
+          <Button
+            id={"on-firefox"}
+            className={"intro-download-btn"}
+            name={"Get it on Firefox"}
+          />
+        </div>
       </div>
       <div className="sample-img-container">
         <img className="sample-img" src={illustrationHero} alt="intro-img" />

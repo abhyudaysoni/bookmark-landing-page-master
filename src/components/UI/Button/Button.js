@@ -10,7 +10,13 @@ export default function Button(props) {
       id={props.id}
       onClick={props.onClick}
     >
-      {props.name}
+      {props.content && (
+        <div className="btn-content">
+          {props.name}
+          {props.content}
+        </div>
+      )}
+      {!props.content && props.name}
     </button>
   );
 }

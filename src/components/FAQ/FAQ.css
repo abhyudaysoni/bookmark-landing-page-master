@@ -1,0 +1,20 @@
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accordion-container .faq-btn {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  width: 80%;
+  border-top: 1px solid #afafaf;
+  border-radius: 0;
+  background: none;
+  height: 50px;
+  margin: 0;
+  text-align: left;
+}
+.arrow-down {
+  height: 15px;
+  width: auto;
+}

@@ -8,7 +8,14 @@ footer {
   padding-right: 50px;
   padding-left: 50px;
 }
-
+.footer-btn {
+  background: none;
+  color: rgb(194, 193, 193);
+}
+.footer-btn:hover {
+  color: #ed8742;
+  text-shadow: none;
+}
 .social-media-links {
   display: flex;
   justify-content: space-evenly;
@@ -16,7 +23,6 @@ footer {
 .social-media-links img {
   margin: 10px;
 }
-
 @media (max-width: 700px) {
   footer {
     height: 10vh;

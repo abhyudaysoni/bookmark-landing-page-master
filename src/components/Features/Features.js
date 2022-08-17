@@ -17,32 +17,33 @@ export default function Features() {
     setTab(3);
   };
   return (
-    <div className="features">
+    <section className="features">
       <section className="section-description">
-        <div>
-          <h3>Features</h3>
-          <p>
-            Our aim is to make it quick and easy for you to access your
-            favourite websites. Your bookmarks sync between your devices so you
-            can access them on the go.
-          </p>
-        </div>
+        <h3>Features</h3>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
       </section>
       <div className="features-tab-btn-container">
         <button
-          className={`tab-links ${tab === 1 ? "active" : "inactive"}`}
+          className={`tab-links`}
+          id={`${tab === 1 ? "active" : "inactive"}`}
           onClick={simpleBookmarkingHandler}
         >
           Simple Bookmarking
         </button>
         <button
-          className={`tab-links ${tab === 2 ? "active" : "inactive"}`}
+          className={`tab-links`}
+          id={`${tab === 2 ? "active" : "inactive"}`}
           onClick={speedySearchingHandler}
         >
           Speedy Searching
         </button>
         <button
-          className={`tab-links ${tab === 3 ? "active" : "inactive"}`}
+          className={`tab-links`}
+          id={`${tab === 3 ? "active" : "inactive"}`}
           onClick={easySharingHandler}
         >
           Easy Sharing
@@ -78,6 +79,6 @@ export default function Features() {
           }
         />
       )}
-    </div>
+    </section>
   );
 }

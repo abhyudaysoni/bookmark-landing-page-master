@@ -9,7 +9,6 @@ export default function Intro() {
       <div className="intro-section">
         <h1>A Simple Bookmark Manager</h1>
         <p className="intro-para">
-          {" "}
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free
         </p>

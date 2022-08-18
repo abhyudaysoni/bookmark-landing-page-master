@@ -13,7 +13,9 @@
   height: 50px;
   margin: 0;
   text-align: left;
-
+}
+.arrow-img {
+  height: 30px;
 }
 .answer {
   width: 75%;

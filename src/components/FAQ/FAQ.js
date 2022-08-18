@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import "./FAQ.css";
-import arrowDown from "../../images/icon-arrow.svg";
-import arrowUp from "../../images/icon-close.svg";
+import arrowDown from "../../images/arrow-down.svg";
+import arrowUp from "../../images/arrow-up.svg";
 
 export default function FAQ() {
   const qna = [
@@ -54,8 +54,12 @@ export default function FAQ() {
               value={element.question}
               content={
                 <img
-                  className="arrow-down"
-                  src={!activity ? arrowDown : arrowUp}
+                  className="arrow-img"
+                  src={
+                    activity && question === element.question
+                      ? arrowUp
+                      : arrowDown
+                  }
                   alt={"arrow-down"}
                 ></img>
               }

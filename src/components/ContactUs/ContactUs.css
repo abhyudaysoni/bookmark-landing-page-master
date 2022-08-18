@@ -44,11 +44,17 @@
   min-height: 50px;
   min-width: 300px;
 }
-.contact-field input:hover {
+.contact-field .valid:hover {
   border: 2px solid #ed8742;
 }
 .contact-field input:focus {
   border: 2px solid #ed8742;
+}
+.contact-field .invalid {
+  border: 3px solid #ff0000;
+}
+.contact-field .invalid:focus {
+  border: 3px solid #ff0000;
 }
 @media (max-width: 700px) {
   .contact-us {

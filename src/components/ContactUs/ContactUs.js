@@ -20,9 +20,13 @@ export default function ContactUs() {
     }
   };
   const submitForm = () => {
-    console.log("form submitted");
-    setEmail("");
-    setFormValidity(true);
+    if (formValidity && email.length > 0) {
+      console.log("form submitted");
+      setEmail("");
+      setFormValidity(true);
+    } else if (email.length > 0 && !formValidity) {
+      alert("incorrect email");
+    }
   };
   return (
     <section className="contact-us">

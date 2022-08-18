@@ -34,6 +34,7 @@ export default function ContactUs() {
       <h2>Stay up-to-date with what we're doing</h2>
       <div className="contact-field">
         <input
+          placeholder="tell us your email..."
           className={formValidity ? "valid" : "invalid"}
           type="email"
           value={email}
@@ -42,7 +43,7 @@ export default function ContactUs() {
         <Button
           className={"contact-us-btn"}
           onClick={submitForm}
-          name={"Contact Us"}
+          name={"Contact Me"}
         />
       </div>
     </section>

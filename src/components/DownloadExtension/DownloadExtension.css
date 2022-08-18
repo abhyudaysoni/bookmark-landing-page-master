@@ -7,11 +7,15 @@
 .card-container {
   min-height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 2rem;
 }
-@media (max-width: 900px) {
-  .card-container {
-    flex-direction: column;
-  }
+.download-extension-btn {
+  background: hsl(231, 69%, 60%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: fit-content;
 }

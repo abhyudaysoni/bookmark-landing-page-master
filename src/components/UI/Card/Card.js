@@ -10,18 +10,11 @@ export default function Card(props) {
       <img src={props.imgSrc} alt="" />
       <h4>{`Add to ${props.name}`}</h4>
       <p>{`Minimum Version ${props.version}`}</p>
-      <img src={dots} alt="dots" />
+      <img id={"dots"} src={dots} alt="dots" />
       <Button
         className={"download-extension-btn"}
         name={"Add & Install Extension"}
-        style={{
-          background: "hsl(231, 69%, 60%)",
-          color: "white",
-          fontSize: "0.7rem",
-          fontWeight: "700",
-          letterSpacing: "2px",
-          width: "90%",
-        }}
+        style={{}}
       />
     </div>
   );

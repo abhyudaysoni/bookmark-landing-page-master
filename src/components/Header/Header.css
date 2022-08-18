@@ -22,6 +22,9 @@ header {
 #hamburger {
   display: none;
 }
+#hamburger:hover {
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   header {
